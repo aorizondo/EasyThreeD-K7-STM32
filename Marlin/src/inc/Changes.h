@@ -601,14 +601,14 @@
   #error "(POLAR|DELTA|SCARA|TPARA)_SEGMENTS_PER_SECOND is now DEFAULT_SEGMENTS_PER_SECOND."
 #elif defined(EXPERIMENTAL_SCURVE)
   #error "EXPERIMENTAL_SCURVE is no longer needed and should be removed."
-#elif defined(DISABLE_IDLE_EXTRUDER)
-  #error "DISABLE_IDLE_EXTRUDER is now DISABLE_OTHER_EXTRUDERS."
+#elif defined(DISABLE_INACTIVE_EXTRUDER)
+  #error "DISABLE_INACTIVE_EXTRUDER is now DISABLE_OTHER_EXTRUDERS."
 #elif defined(FAN_PIN)
   #error "FAN_PIN is now FAN0_PIN."
-#elif defined(DISABLE_IDLE_X) || defined(DISABLE_IDLE_Y) || defined(DISABLE_IDLE_Z) \
-   || defined(DISABLE_IDLE_I) || defined(DISABLE_IDLE_J) || defined(DISABLE_IDLE_K) \
-   || defined(DISABLE_IDLE_U) || defined(DISABLE_IDLE_V) || defined(DISABLE_IDLE_W) || defined(DISABLE_IDLE_E)
-  #error "DISABLE_IDLE_[XYZIJKUVWE] is now DISABLE_IDLE_[XYZIJKUVWE]."
+#elif defined(DISABLE_INACTIVE_X) || defined(DISABLE_INACTIVE_Y) || defined(DISABLE_INACTIVE_Z) \
+   || defined(DISABLE_INACTIVE_I) || defined(DISABLE_INACTIVE_J) || defined(DISABLE_INACTIVE_K) \
+   || defined(DISABLE_INACTIVE_U) || defined(DISABLE_INACTIVE_V) || defined(DISABLE_INACTIVE_W) || defined(DISABLE_INACTIVE_E)
+  #error "DISABLE_INACTIVE_[XYZIJKUVWE] is now DISABLE_IDLE_[XYZIJKUVWE]."
 #elif defined(DEFAULT_STEPPER_DEACTIVE_TIME)
   #error "DEFAULT_STEPPER_DEACTIVE_TIME is now DEFAULT_STEPPER_TIMEOUT_SEC."
 #elif defined(TFT_SHARED_SPI)

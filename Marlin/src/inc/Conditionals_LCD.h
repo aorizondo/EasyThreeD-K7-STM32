@@ -1104,7 +1104,7 @@
 
 // No inactive extruders with SWITCHING_NOZZLE or Průša MMU1 or just 1 E stepper exists
 #if ENABLED(SWITCHING_NOZZLE) || HAS_PRUSA_MMU1 || E_STEPPERS < 2
-  #undef DISABLE_IDLE_EXTRUDER
+  #undef DISABLE_INACTIVE_EXTRUDER
 #endif
 
 // Switching extruder has its own servo?
