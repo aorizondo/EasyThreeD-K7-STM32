@@ -20,15 +20,15 @@ jobs:
       - name: Install PlatformIO Core
         run: pip install --upgrade platformio
 
-      - name: Import K7 Config
-        run: |
-          cp -f config/EasyThreeD/ET4000PLUS/K7/Configuration.h Marlin/Configuration.h
-          cp -f config/EasyThreeD/ET4000PLUS/K7/Configuration_adv.h Marlin/Configuration_adv.h
-      - name: Build PlatformIO Project - K7
-        run: pio run -e mks_robin_lite_maple
-      - name: Move firmware to config folder - K7
-        run: |
-          cp .pio/build/mks_robin_lite_maple/mksLite.bin config/EasyThreeD/ET4000PLUS/K7/
+#      - name: Import K7 Config
+#        run: |
+#          cp -f config/EasyThreeD/ET4000PLUS/K7/Configuration.h Marlin/Configuration.h
+#          cp -f config/EasyThreeD/ET4000PLUS/K7/Configuration_adv.h Marlin/Configuration_adv.h
+#      - name: Build PlatformIO Project - K7
+#        run: pio run -e mks_robin_lite_maple
+#      - name: Move firmware to config folder - K7
+#        run: |
+#          cp .pio/build/mks_robin_lite_maple/mksLite.bin config/EasyThreeD/ET4000PLUS/K7/
 
       - name: Import K9 Config
         run: |
